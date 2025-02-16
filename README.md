@@ -1,2 +1,2 @@
-# NLP for EBOOKs
-This is a project to get information from a EBOOK, so you can see the number of chapters, number of words, etc.
+# Mood Across Days
+This project use the NLTK library to analyze entries in a diary-like system to determine the mood of the day and plot it 
