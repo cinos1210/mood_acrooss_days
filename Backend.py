@@ -1,6 +1,8 @@
 import glob
 from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
+#instead of this function you could go and use the next line
+filepaths = sorted(glob.glob('diary/*.txt'))
 
 def get_date_data():
     names = []
@@ -22,6 +24,8 @@ def getPosNeg(names):
 
     return pos, neg
 
+#instead of function dates_again() you could use this next line
+dates = [name.strip('.txt').strip('diary/') for name in filepaths]
 
 def dates_again():
     dates = get_date_data()
